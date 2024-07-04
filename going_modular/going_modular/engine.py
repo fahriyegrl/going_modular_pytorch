@@ -34,7 +34,7 @@ def train_step(model: torch.nn.Module,
     model.train()
 
     # Setup train loss and train accurancy values
-    train_los, train_acc = 0, 0
+    train_loss, train_acc = 0, 0
 
     # Loop through data Loader data batches
     for batch, (X,y) in enumerate(dataloader):
